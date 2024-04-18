@@ -4,12 +4,12 @@
 print("Hello world!")
 
 #Personal Message
-nomePersona = "Eric"
-print(f"Hello {nomePersona}, would you like to learn some Python today")
+name = "Eric"
+print(f"Hello {name}, would you like to learn some Python today")
 
 #Name Cases
-upperCases = nomePersona.upper()
-lowerCases = nomePersona.lower()
+upperCases = name.upper()
+lowerCases = name.lower()
 print(upperCases)
 print(lowerCases)
 
@@ -21,24 +21,24 @@ print (message + " once said "  + famousPerson)
 
 #File Extension
 fileName = "python_notes.txt"
-fileNameCorretto = fileName.removesuffix(".txt")
-print(fileNameCorretto)
+fileNameCorrect = fileName.removesuffix(".txt")
+print(fileNameCorrect)
 
 #Names
 names = ["Gianni", "Mario", "Flavio", "Andrea", "Matteo"]
-amico1 = names[0]
-amico2 = names[1]
-amico3 = names[2]
-amico4 = names[3]
-amico5 = names[4]
-listaAmici = [amico1, amico2, amico3, amico4, amico5] #questa lista è stata creata solo a scopo per un check
-print (listaAmici)
+friend1 = names[0]
+friend2 = names[1]
+friend3 = names[2]
+friend4 = names[3]
+friend5 = names[4]
+listFriends = [friend1, friend2, friend3, friend4, friend5] #questa lista è stata creata solo a scopo per un check
+print (listFriends)
 
 #Greetings
 for name in names:
     print ("Grazie mille per aver partecipato all'attività", name )
 
 #Your own list
-veicoli = ["an S2000", "an s13", "an honda civic", "a mitsubishi evo", "a mitsubishi lancer", "an harley davinson"]
-for veicolo in veicoli:
-    print("Surely", veicolo + "is in my dream garage")
+vehicles = ["an S2000", "an s13", "an honda civic", "a mitsubishi evo", "a mitsubishi lancer", "an harley davinson"]
+for vehicle in vehicles:
+    print("Surely", vehicle + "is in my dream garage")
