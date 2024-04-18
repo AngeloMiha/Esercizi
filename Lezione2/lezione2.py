@@ -42,3 +42,54 @@ for name in names:
 vehicles = ["an S2000", "an s13", "an honda civic", "a mitsubishi evo", "a mitsubishi lancer", "an harley davinson"]
 for vehicle in vehicles:
     print("Surely", vehicle + "is in my dream garage")
+
+# 3-3. Your Own List:
+
+
+# 3-4. Guest List:
+
+
+# 3-5. Changing Guest List:
+
+
+# 3-6. More Guests:
+
+
+# 3-7. Shrinking Guest List:
+
+
+# 3-8. Seeing the World:
+
+
+# 3-9. Dinner Guests:
+
+
+# 3-10. Every Function:
+
+
+# 6-1. Person:
+
+
+# 6-2. Favorite Numbers:
+
+
+# 6-3. Glossary:
+
+
+# 6-7. People:
+
+
+# 6-8. Pets:
+
+
+# 6-9. Favorite Places:
+
+
+# 6-10. Favorite Numbers:
+
+
+# 6-11. Cities:
+
+
+# 6-12. Extensions:
+
