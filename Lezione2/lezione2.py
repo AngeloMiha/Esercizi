@@ -145,8 +145,6 @@ print("Number of people invited to dinner:", num_invited)
 
 
 # 3-10. Every Function:
-print("\n")
-print("Number 3-10.")
 
 
 
