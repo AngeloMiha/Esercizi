@@ -145,32 +145,97 @@ print("Number of people invited to dinner:", num_invited)
 
 
 # 3-10. Every Function:
+print("\n")
+print("Number 3-10.")
+fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple", "Kiwi", ""]
+print("Original list of fruits:")
+print(fruits)
 
+# Add a new fruit to the list
+fruits.append("Grapes")
+
+# Print the updated list
+print("\nList of fruits after adding Grapes:")
+print(fruits)
+
+# Insert a fruit at a specific position
+fruits.insert(2, "Strawberry")
+
+# Print the list after insertion
+print("\nList of fruits after inserting Strawberry at position 2:")
+print(fruits)
+
+# Remove a fruit from the list
+fruits.remove("Orange")
+
+# Print the list after removal
+print("\nList of fruits after removing Orange:")
+print(fruits)
+
+# Sort the list alphabetically
+fruits.sort()
+
+# Print the sorted list
+print("\nList of fruits after sorting alphabetically:")
+print(fruits)
+
+# Reverse the list
+fruits.reverse()
+
+# Print the reversed list
+print("\nList of fruits after reversing the order:")
+print(fruits)
 
 
 # 6-1. Person:
+print("\n")
+print("Number 6-1.")
+
 
 
 # 6-2. Favorite Numbers:
+print("\n")
+print("Number 6-2.")
+
 
 
 # 6-3. Glossary:
+print("\n")
+print("Number 6-3.")
+
 
 
 # 6-7. People:
+print("\n")
+print("Number 6-7.")
+
 
 
 # 6-8. Pets:
+print("\n")
+print("Number 6-8.")
+
 
 
 # 6-9. Favorite Places:
+print("\n")
+print("Number 6-9.")
+
 
 
 # 6-10. Favorite Numbers:
+print("\n")
+print("Number 6-10.")
+
 
 
 # 6-11. Cities:
+print("\n")
+print("Number 6-11.")
+
 
 
 # 6-12. Extensions:
+print("\n")
+print("Number 6-12.")
 
