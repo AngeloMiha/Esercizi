@@ -85,13 +85,28 @@ guests.append(new_guest_end)
 print("\nUpdated guest list:")
 for guest in guests:
     print("Hey", guest + ", want to join us for dinner?")
-print("\nGood news! We found a bigger dinner table.")
+print("\nGood news! We found a bigger dinner table")
 
 
 # 3-7. Shrinking Guest List:
+print("\n")
+print("Number 3-7.")
+print("\nSorry, the new dinner table won't arrive in time. We can only invite two people")
+while len(guests) > 2:
+    removed_guest = guests.pop()
+    print("Sorry", removed_guest + ", we can't invite you to dinner")
+print("\nInvited guests:")
+for guest in guests:
+    print("Hey", guest + ", you're still invited to dinner XD")
+del guests[-2:]
+print("\nGuest list after dinner:", guests)
 
 
 # 3-8. Seeing the World:
+print("\n")
+print("Number 3-8.")
+
+
 
 
 # 3-9. Dinner Guests:
