@@ -105,11 +105,43 @@ print("\nGuest list after dinner:", guests)
 # 3-8. Seeing the World:
 print("\n")
 print("Number 3-8.")
+places = ["Tokyo", "Paris", "Hawaii", "New York", "Amsterdam"]
+print(places)
 
+print("\nSorted alphabetically: ")
+print(sorted(places))
 
+print("Original order preserved: ")
+print(places)
+
+print("\nSorted in reverse-alphabetical order: ")
+print(sorted(places, reverse=True))
+
+print("Original order preserved: ")
+print(places)
+
+print("\nReversed order using reverse(): ")
+places.reverse()
+print(places)
+
+print("\nReversed again to original order: ")
+places.reverse()
+print(places)
+
+print("\nSorted alphabetically using sort(): ")
+places.sort()
+print(places)
+
+print("\nSorted in reverse-alphabetical order using sort(): ")
+places.sort(reverse=True)
+print(places)
 
 
 # 3-9. Dinner Guests:
+print("\n")
+print("Number 3-9.")
+
+
 
 
 # 3-10. Every Function:
