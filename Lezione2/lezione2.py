@@ -147,43 +147,58 @@ print("Number of people invited to dinner:", num_invited)
 # 3-10. Every Function:
 print("\n")
 print("Number 3-10.")
-fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple", "Kiwi", ""]
+fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple"]
 print("Original list of fruits:")
 print(fruits)
 
-# Add a new fruit to the list
-fruits.append("Grapes")
+# 1
+random_fruit = random.choice(fruits)
+print("\nRandom fruit (", random_fruit, ") is out of the list. ")
+fruits.remove(random_fruit)
+new_fruit = "Grapes"
+fruits.append(new_fruit)
+print("\nNew fruit (", new_fruit, ") is on of the list. ")
 
-# Print the updated list
-print("\nList of fruits after adding Grapes:")
+# 2
+new_fruit_beginning = "Lemon"
+fruits.insert(0, new_fruit_beginning)
+new_fruit_middle = "Kiwi"
+middle_index = len(fruits) // 2
+fruits.insert(middle_index, new_fruit_middle)
+new_fruit_end = "Peach"
+fruits.append(new_fruit_end)
+print("\nUpdated fruit list:")
 print(fruits)
 
-# Insert a fruit at a specific position
-fruits.insert(2, "Strawberry")
+# 3
+num_fruits = len(fruits)
+print("Number of the fruit list:", num_fruits)
+while len(fruits) > 5:
+    fruits.pop()
+num_fruits = len(fruits)
+print("Number of the new fruit list:", num_fruits)
 
-# Print the list after insertion
-print("\nList of fruits after inserting Strawberry at position 2:")
-print(fruits)
+# 4
+print("\nSorted alphabetically: ")
+print(sorted(fruits))
 
-# Remove a fruit from the list
-fruits.remove("Orange")
+print("\nSorted in reverse-alphabetical order: ")
+print(sorted(fruits, reverse=True))
 
-# Print the list after removal
-print("\nList of fruits after removing Orange:")
-print(fruits)
-
-# Sort the list alphabetically
-fruits.sort()
-
-# Print the sorted list
-print("\nList of fruits after sorting alphabetically:")
-print(fruits)
-
-# Reverse the list
+print("\nReversed order using reverse(): ")
 fruits.reverse()
+print(fruits)
 
-# Print the reversed list
-print("\nList of fruits after reversing the order:")
+print("\nReversed again to original order: ")
+fruits.reverse()
+print(fruits)
+
+print("\nSorted alphabetically using sort(): ")
+fruits.sort()
+print(fruits)
+
+print("\nSorted in reverse-alphabetical order using sort(): ")
+fruits.sort(reverse=True)
 print(fruits)
 
 
