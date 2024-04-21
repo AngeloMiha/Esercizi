@@ -107,31 +107,23 @@ print("\n")
 print("Number 3-8.")
 places = ["Tokyo", "Paris", "Hawaii", "New York", "Amsterdam"]
 print(places)
-
 print("\nSorted alphabetically: ")
 print(sorted(places))
-
 print("Original order preserved: ")
 print(places)
-
 print("\nSorted in reverse-alphabetical order: ")
 print(sorted(places, reverse=True))
-
 print("Original order preserved: ")
 print(places)
-
 print("\nReversed order using reverse(): ")
 places.reverse()
 print(places)
-
 print("\nReversed again to original order: ")
 places.reverse()
 print(places)
-
 print("\nSorted alphabetically using sort(): ")
 places.sort()
 print(places)
-
 print("\nSorted in reverse-alphabetical order using sort(): ")
 places.sort(reverse=True)
 print(places)
@@ -157,7 +149,9 @@ print("\nRandom fruit (", random_fruit, ") is out of the list. ")
 fruits.remove(random_fruit)
 new_fruit = "Grapes"
 fruits.append(new_fruit)
-print("\nNew fruit (", new_fruit, ") is on of the list. ")
+print("New fruit (", new_fruit, ") is on of the list. ")
+print("Updated fruit list:")
+print(fruits)
 
 # 2
 new_fruit_beginning = "Lemon"
@@ -167,36 +161,33 @@ middle_index = len(fruits) // 2
 fruits.insert(middle_index, new_fruit_middle)
 new_fruit_end = "Peach"
 fruits.append(new_fruit_end)
-print("\nUpdated fruit list:")
+print("\nNew fruits on top/bottom and center of the list:")
 print(fruits)
 
 # 3
 num_fruits = len(fruits)
-print("Number of the fruit list:", num_fruits)
+print("\nNumber of the fruit list:", num_fruits)
 while len(fruits) > 5:
     fruits.pop()
 num_fruits = len(fruits)
 print("Number of the new fruit list:", num_fruits)
 
 # 4
+print("\nLast original fruit list:")
+print(fruits)
 print("\nSorted alphabetically: ")
 print(sorted(fruits))
-
 print("\nSorted in reverse-alphabetical order: ")
 print(sorted(fruits, reverse=True))
-
 print("\nReversed order using reverse(): ")
 fruits.reverse()
 print(fruits)
-
 print("\nReversed again to original order: ")
 fruits.reverse()
 print(fruits)
-
 print("\nSorted alphabetically using sort(): ")
 fruits.sort()
 print(fruits)
-
 print("\nSorted in reverse-alphabetical order using sort(): ")
 fruits.sort(reverse=True)
 print(fruits)
