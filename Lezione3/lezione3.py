@@ -129,3 +129,30 @@ for pizza in friend_pizzas:
     print(pizza)
 
 
+# Number 5 - 1
+print("\n")
+print("Number 5-1:")
+car: str = 'subaru'
+fruit: str = 'apple'
+number: int = 1
+
+guess1: str = input("Try and guess the car: ")
+guess2: str = input("Try and guess the fruit: ")
+guess3: int = input("Try and guess the number: ")
+
+if guess1 == car:
+    print("I predict it's True")
+else:
+    print("I predict is False")
+
+if guess2 == fruit:
+    print("I predict it's True")
+else:
+    print("I predict is False")
+
+if guess3 == number:
+    print("I predict it's True")
+else:
+    print("I predict is False")
+
+
