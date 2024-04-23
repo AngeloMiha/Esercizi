@@ -1,4 +1,4 @@
-"""
+
 def subtract(a: float, b: float):
     diff: float = a-b
     return diff
@@ -6,8 +6,8 @@ a: float = float(input("Inserisci il primo numero: "))
 b: float = float(input("Inserisci il secondo numero: "))
 differenza = subtract(a, b)
 print(f"La differenza è: ", differenza)
-"""
 
+ 
 """
 l = [3, 7, 8, 4, 1, 6, 3, 8, 4]
 def median(l: list[float]):
