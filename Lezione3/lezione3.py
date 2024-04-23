@@ -81,3 +81,12 @@ for i in range(3, 33, 3):
 print(multiples_of_three)
 
 
+# Number 4 - 8
+print("\n")
+print("Number 4-8:")
+power: list[float] = []
+for num in range(1, 11, 1):
+    power.append(num ** 2)
+print(power)
+
+
