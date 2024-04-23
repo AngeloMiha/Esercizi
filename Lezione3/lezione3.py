@@ -72,3 +72,12 @@ for i in range(20):
         continue
 
 
+# Number 4 -7
+print("\n")
+print("Number 4-7:")
+multiples_of_three: list[float] = []
+for i in range(3, 33, 3):
+    multiples_of_three.append(i)
+print(multiples_of_three)
+
+
