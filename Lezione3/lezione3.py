@@ -97,3 +97,14 @@ power: list[float] = [num ** 3 for num in range(1, 11)]
 print(power)
 
 
+# Number 4 - 10
+print("\n")
+print("Number 4-10:")
+power: list[float] = [num ** 3 for num in range(1, 11)]
+print(power)
+print("First:", power[:3])
+middle = len(power) // 2
+print("Middle:", power[middle - 1:middle + 2])
+print("Last:", power[-3:])
+
+
