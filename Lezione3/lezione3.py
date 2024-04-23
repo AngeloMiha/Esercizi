@@ -86,7 +86,14 @@ print("\n")
 print("Number 4-8:")
 power: list[float] = []
 for num in range(1, 11, 1):
-    power.append(num ** 2)
+    power.append(num ** 3)
+print(power)
+
+
+# Number 4 - 9
+print("\n")
+print("Number 4-9:")
+power: list[float] = [num ** 3 for num in range(1, 11)]
 print(power)
 
 
