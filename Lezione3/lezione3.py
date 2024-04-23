@@ -49,3 +49,13 @@ for i in range(10):
     num += 1
 
 print(l)
+
+
+# Number 4 - 5
+print("\n")
+print("Number 4-5:")
+print("Min number:", min(l), "\n"
+      "Max number:", max(l))
+print("Sum numbers:", sum(l))
+
+
