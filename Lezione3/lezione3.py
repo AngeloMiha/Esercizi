@@ -1,6 +1,6 @@
 # Number 4 - 1
 print("Number 4-1:")
-pizzas: list[str] = ["margherita", "crostino", "diavola"]
+pizzas: list[str] = ["margherita", "rossa", "diavola"]
 i: int = 1
 for pizza in pizzas:
     print("Pizza number", i, "is", pizza)
@@ -106,5 +106,15 @@ print("First:", power[:3])
 middle = len(power) // 2
 print("Middle:", power[middle - 1:middle + 2])
 print("Last:", power[-3:])
+
+
+# Number 4-11
+print("\n")
+print("Number 4-11:")
+friend_pizzas: list[str] = ["bufala", "crostino", "bianca"]
+pizzas.append("rustica")
+friend_pizzas.append("marinara")
+print("My favorite pizzas are:", pizzas)
+print("My friend's favourite pizza are: ", friend_pizzas)
 
 
