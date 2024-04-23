@@ -30,3 +30,12 @@ print("I'm allergic to a", animals[i])
 print("All this animals are my favourite !!")
 
 
+# Number 4 - 3
+print("\n")
+print("Number 4-3:")
+num = 1
+for i in range(20):
+    print(num, " ")
+    num += 1
+
+
