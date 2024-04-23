@@ -108,13 +108,24 @@ print("Middle:", power[middle - 1:middle + 2])
 print("Last:", power[-3:])
 
 
-# Number 4-11
+# Number 4 - 11
 print("\n")
 print("Number 4-11:")
 friend_pizzas: list[str] = ["bufala", "crostino", "bianca"]
 pizzas.append("rustica")
 friend_pizzas.append("marinara")
-print("My favorite pizzas are:", pizzas)
-print("My friend's favourite pizza are: ", friend_pizzas)
+print("My favourite pizzas are:", pizzas)
+print("My friend's favourite pizzas are: ", friend_pizzas)
+
+
+# Number 4 - 12
+print("\n")
+print("Number 4-12:")
+print("My pizzas:")
+for pizza in pizzas:
+    print(pizza)
+print("My friend's pizzas:")
+for pizza in friend_pizzas:
+    print(pizza)
 
 
