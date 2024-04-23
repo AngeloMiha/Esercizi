@@ -59,3 +59,16 @@ print("Min number:", min(l), "\n"
 print("Sum numbers:", sum(l))
 
 
+# Number 4 - 6
+print("\n")
+print("Number 4-6:")
+num: int = 1
+for i in range(20):
+    if num % 2 != 0:
+        print(num)
+        num += 1
+    else:
+        num += 1
+        continue
+
+
