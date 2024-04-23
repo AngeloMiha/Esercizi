@@ -33,9 +33,19 @@ print("All this animals are my favourite !!")
 # Number 4 - 3
 print("\n")
 print("Number 4-3:")
-num = 1
+num: int = 1
 for i in range(20):
     print(num, " ")
     num += 1
 
 
+# Number 4 - 4
+print("\n")
+print("Number 4-4:")
+l: list[float] = []
+num: int = 1
+for i in range(10):
+    l.append(num)
+    num += 1
+
+print(l)
