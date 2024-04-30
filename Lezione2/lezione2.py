@@ -388,4 +388,37 @@ for city, info in cities.items():
 # 6-12. Extensions:
 print("\n")
 print("Number 6-12.")
+people_info = {
+    "Angelo": {
+        "age": 19,
+        "favorite_numbers": [7, 14, 21],
+        "favorite_color": "blue"
+    },
+    "Gabriel": {
+        "age": 11,
+        "favorite_numbers": [12, 24],
+        "favorite_color": "green"
+    },
+    "Samuele": {
+        "age": 18,
+        "favorite_numbers": [5],
+        "favorite_color": "red"
+    },
+    "Davide": {
+        "age": 17,
+        "favorite_numbers": [8, 16],
+        "favorite_color": "yellow"
+    },
+    "Mattia": {
+        "age": 21,
+        "favorite_numbers": [3, 6, 9],
+        "favorite_color": "purple"
+    }
+}
 
+for person, info in people_info.items():
+    print(f"{person}'s Information:")
+    print(f"Age: {info['age']}")
+    print("Favorite Numbers:", ", ".join(map(str, info['favorite_numbers'])))
+    print(f"Favorite Color: {info['favorite_color']}")
+    print()
