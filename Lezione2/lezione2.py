@@ -262,7 +262,35 @@ for word, meaning in glossary.items():
 # 6-7. People:
 print("\n")
 print("Number 6-7.")
+person1 = {
+    "first_name": "Angelo",
+    "last_name": "Mihalache",
+    "age": 19,
+    "city": "Rome"
+}
 
+person2 = {
+    "first_name": "Mattia",
+    "last_name": "Rò",
+    "age": 18,
+    "city": "Amsterdam"
+}
+
+person3 = {
+    "first_name": "Andrea",
+    "last_name": "Capasso",
+    "age": 20,
+    "city": "Napoli"
+}
+
+people = [person1, person2, person3]
+
+for person in people:
+    print("First Name:", person["first_name"])
+    print("Last Name:", person["last_name"])
+    print("Age:", person["age"])
+    print("City:", person["city"])
+    print()
 
 
 # 6-8. Pets:
