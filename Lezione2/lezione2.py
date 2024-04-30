@@ -343,7 +343,18 @@ for person, places in favorite_places.items():
 # 6-10. Favorite Numbers:
 print("\n")
 print("Number 6-10.")
+favorite_numbers = {
+    "Angelo": [7, 21, 23],
+    "Gabriel": [8, 10, 27, 55],
+    "Samuele": [5],
+    "Davide": [8, 16],
+    "Mattia": [3, 6, 9]
+}
 
+for person, numbers in favorite_numbers.items():
+    print(f"{person}'s favorite numbers are:")
+    print(numbers)
+    print()
 
 
 # 6-11. Cities:
