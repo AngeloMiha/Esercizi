@@ -296,7 +296,32 @@ for person in people:
 # 6-8. Pets:
 print("\n")
 print("Number 6-8.")
+pet1 = {
+    "animal_kind": "Praying Mantis",
+    "owner_name": "Angelo"
+}
 
+pet2 = {
+    "animal_kind": "Dog",
+    "owner_name": "Sani"
+}
+
+pet3 = {
+    "animal_kind": "Cat",
+    "owner_name": "Mattia"
+}
+
+pet4 = {
+    "animal_kind": "Rabbit",
+    "owner_name": "Davide"
+}
+
+pets = [pet1, pet2, pet3, pet4]
+
+for pet in pets:
+    print("Animal Kind:", pet["animal_kind"])
+    print("Owner Name:", pet["owner_name"])
+    print()
 
 
 # 6-9. Favorite Places:
