@@ -1,4 +1,4 @@
-# Number 4 - 1
+# 4-1. Pizzas
 print("Number 4-1:")
 pizzas: list[str] = ["margherita", "rossa", "diavola"]
 i: int = 1
@@ -13,7 +13,7 @@ i += 1
 print("I really like", pizzas[i], "pizza !!! ")
 
 
-# Number 4 - 2
+# 4-2. Animals
 print("\n")
 print("Number 4-2:")
 animals: list[str] = ["monkey", "tiger", "cat"]
@@ -30,7 +30,7 @@ print("I'm allergic to a", animals[i])
 print("All this animals are my favourite !!")
 
 
-# Number 4 - 3
+# 4-3. Counting to Twenty
 print("\n")
 print("Number 4-3:")
 num: int = 1
@@ -39,7 +39,7 @@ for i in range(20):
     num += 1
 
 
-# Number 4 - 4
+# 4-4. One Million
 print("\n")
 print("Number 4-4:")
 l: list[float] = []
@@ -51,7 +51,7 @@ for i in range(10):
 print(l)
 
 
-# Number 4 - 5
+# 4-5. Summing a Million
 print("\n")
 print("Number 4-5:")
 print("Min number:", min(l), "\n"
@@ -59,7 +59,7 @@ print("Min number:", min(l), "\n"
 print("Sum numbers:", sum(l))
 
 
-# Number 4 - 6
+# 4-6. Odd Numbers
 print("\n")
 print("Number 4-6:")
 num: int = 1
@@ -72,7 +72,7 @@ for i in range(20):
         continue
 
 
-# Number 4 -7
+# 4-7. Threes
 print("\n")
 print("Number 4-7:")
 multiples_of_three: list[float] = []
@@ -81,7 +81,7 @@ for i in range(3, 33, 3):
 print(multiples_of_three)
 
 
-# Number 4 - 8
+# 4-8. Cubes
 print("\n")
 print("Number 4-8:")
 power: list[float] = []
@@ -90,14 +90,14 @@ for num in range(1, 11, 1):
 print(power)
 
 
-# Number 4 - 9
+# 4-9. Cube Comprehension
 print("\n")
 print("Number 4-9:")
 power: list[float] = [num ** 3 for num in range(1, 11)]
 print(power)
 
 
-# Number 4 - 10
+# 4-10. Slices
 print("\n")
 print("Number 4-10:")
 power: list[float] = [num ** 3 for num in range(1, 11)]
@@ -108,7 +108,7 @@ print("Middle:", power[middle - 1:middle + 2])
 print("Last:", power[-3:])
 
 
-# Number 4 - 11
+# 4-11. My Pizzas, Your Pizzas
 print("\n")
 print("Number 4-11:")
 friend_pizzas: list[str] = ["bufala", "crostino", "bianca"]
@@ -118,7 +118,7 @@ print("My favourite pizzas are:", pizzas)
 print("My friend's favourite pizzas are: ", friend_pizzas)
 
 
-# Number 4 - 12
+# 4-12. More Loops
 print("\n")
 print("Number 4-12:")
 print("My pizzas:")
@@ -129,30 +129,117 @@ for pizza in friend_pizzas:
     print(pizza)
 
 
-# Number 5 - 1
+# 5-1. Conditional Tests
 print("\n")
 print("Number 5-1:")
-car: str = 'subaru'
-fruit: str = 'apple'
-number: int = 1
+car = 'subaru'
 
-guess1: str = input("Try and guess the car: ")
-guess2: str = input("Try and guess the fruit: ")
-guess3: int = input("Try and guess the number: ")
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')
+print("\nIs car != 'honda'? I predict True.")
+print(car != 'honda')
+print("\nIs car.lower() == 'subaru'? I predict True.")
+print(car.lower() == 'subaru')
+print("\nIs car.upper() == 'SUBARU'? I predict True.")
+print(car.upper() == 'SUBARU')
+print("\nIs car.startswith('s')? I predict True.")
+print(car.startswith('s'))
+print("\nIs len(car) == 6? I predict True.")
+print(len(car) == 6)
+print("\nIs 'u' in car? I predict True.")
+print('u' in car)
+print("\nIs 'e' in car? I predict False.")
+print('e' in car)
+print("\nIs car == 'Subaru'? I predict False.")
+print(car == 'Subaru')
 
-if guess1 == car:
-    print("I predict it's True")
-else:
-    print("I predict is False")
+# 5-2. More Conditional Tests
+print("\n")
+print("Number 5-2:")
+name = 'John'
+age = 25
+numbers = [1, 2, 3, 4, 5]
 
-if guess2 == fruit:
-    print("I predict it's True")
-else:
-    print("I predict is False")
+print("Test 1: Is name == 'John'? I predict True.")
+print(name == 'John')
+print("\nTest 2: Is name == 'john'? I predict False.")
+print(name == 'john')
+print("\nTest 3: Is name.lower() == 'john'? I predict True.")
+print(name.lower() == 'john')
+print("\nTest 4: Is age == 25? I predict True.")
+print(age == 25)
+print("\nTest 5: Is age != 30? I predict True.")
+print(age != 30)
+print("\nTest 6: Is age > 20? I predict True.")
+print(age > 20)
+print("\nTest 7: Is age < 30? I predict True.")
+print(age < 30)
+print("\nTest 8: Is age >= 25? I predict True.")
+print(age >= 25)
+print("\nTest 9: Is age <= 30? I predict True.")
+print(age <= 30)
+print("\nTest 10: Is name == 'John' and age == 25? I predict True.")
+print(name == 'John' and age == 25)
+print("\nTest 11: Is name == 'John' or age == 30? I predict True.")
+print(name == 'John' or age == 30)
+print("\nTest 12: Is 3 in numbers? I predict True.")
+print(3 in numbers)
+print("\nTest 13: Is 6 not in numbers? I predict True.")
+print(6 not in numbers)
 
-if guess3 == number:
-    print("I predict it's True")
-else:
-    print("I predict is False")
+
+# 5-3. Alien Colors #1
+print("\n")
+print("Number 5-3:")
+
+
+
+# 5-4. Alien Colors #2
+print("\n")
+print("Number 5-4:")
+
+
+
+# 5-5. Alien Colors #3
+print("\n")
+print("Number 5-5:")
+
+
+
+# 5-6. Stages of Life
+print("\n")
+print("Number 5-6:")
+
+
+
+# 5-7. Favorite Fruit
+print("\n")
+print("Number 5-7:")
+
+
+
+# 5-8. Hello Admin
+print("\n")
+print("Number 5-8:")
+
+
+
+# 5-9. No Users
+print("\n")
+print("Number 5-9:")
+
+
+
+# 5-10. Checking Usernames
+print("\n")
+print("Number 5-10:")
+
+
+
+# 5-11. Ordinal Numbers
+print("\n")
+print("Number 5-11:")
 
 
