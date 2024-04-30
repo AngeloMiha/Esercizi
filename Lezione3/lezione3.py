@@ -263,7 +263,13 @@ if 'kiwi' in favorite_fruits:
 # 5-8. Hello Admin
 print("\n")
 print("Number 5-8:")
+usernames = ['Angelo', 'Mattia', 'Gabriel', 'Admin', 'Sani', 'Samuele']
 
+for username in usernames:
+    if username == 'Admin':
+        print("Hello Admin, would you like to see a status report?")
+    else:
+        print(f"Hello {username.title()}, thank you for logging in again.")
 
 
 # 5-9. No Users
