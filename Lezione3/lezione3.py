@@ -290,7 +290,15 @@ else:
 # 5-10. Checking Usernames
 print("\n")
 print("Number 5-10:")
+current_users = ['Angelo', 'Mattia', 'Gabriel', 'Stella', 'Sani', 'Samuele']
+new_users = ['Angelo', 'Andrea', 'Sani', 'Claudio', 'Liam']
+current_users_lower = [user.lower() for user in current_users]
 
+for user in new_users:
+    if user.lower() in current_users_lower:
+        print(f"Sorry, the username '{user}' is already taken. Please enter a new username.")
+    else:
+        print(f"The username '{user}' is available.")
 
 
 # 5-11. Ordinal Numbers
