@@ -360,7 +360,29 @@ for person, numbers in favorite_numbers.items():
 # 6-11. Cities:
 print("\n")
 print("Number 6-11.")
+cities = {
+    "Rome" : {
+        "country": "Italy",
+        "population": "Over 3 millions",
+        "fact": "Nearly 700,000 euros worth of coins are tossed into Rome's Trevi Fountain each year."
+    },
+    "London" : {
+        "country": "United Kingdom",
+        "population": "Over 9 millions",
+        "fact": "Big Ben is the name for the massive 13 tons bell inside the clock tower and the name of the tower is Elizabeth Tower!"
+    },
+    "Rio De Janeiro" : {
+        "country": "Brazil",
+        "population": "Over 7 millions",
+        "fact": "The city got its name from a river that is actually a bay."
+    }
+}
 
+for city, info in cities.items():
+    print(f"{city}, {info['country']}:")
+    print(f"population: {info['population']}")
+    print(f"fact: {info['fact']}")
+    print()
 
 
 # 6-12. Extensions:
