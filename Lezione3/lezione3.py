@@ -246,7 +246,18 @@ else:
 # 5-7. Favorite Fruit
 print("\n")
 print("Number 5-7:")
+favorite_fruits = ['apple', 'banana', 'orange']
 
+if 'apple' in favorite_fruits:
+    print("You really like Apples!")
+if 'banana' in favorite_fruits:
+    print("You really like Bananas!")
+if 'orange' in favorite_fruits:
+    print("You really like Oranges!")
+if 'grape' in favorite_fruits:
+    print("You really like Grapes!")
+if 'kiwi' in favorite_fruits:
+    print("You really like Kiwis!")
 
 
 # 5-8. Hello Admin
