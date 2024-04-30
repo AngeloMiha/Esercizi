@@ -245,7 +245,18 @@ for person, number in favorite_numbers.items():
 # 6-3. Glossary:
 print("\n")
 print("Number 6-3.")
+glossary = {
+    "variable": "A named storage location in a program that holds data, which can be modified during program execution.",
+    "function": "A named block of code that performs a specific task. Functions can take inputs (parameters) and optionally return an output.",
+    "loop": "A control flow statement that allows code to be executed repeatedly based on a condition.",
+    "dictionary": "A collection of key-value pairs where each key is associated with a value. Dictionaries are unordered, mutable, and indexed.",
+    "list": "An ordered collection of items that can contain elements of different data types. Lists are mutable, meaning their elements can be changed after they are created."
+}
 
+for word, meaning in glossary.items():
+    print(f"{word.capitalize()}:")
+    print(meaning)
+    print()
 
 
 # 6-7. People:
