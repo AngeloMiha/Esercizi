@@ -203,7 +203,12 @@ if alien_color == 'green':
 # 5-4. Alien Colors #2
 print("\n")
 print("Number 5-4:")
+alien_color = 'green'
 
+if alien_color == 'green':
+    print("Congratulations! You just earned 5 points.")
+else:
+    print("Congratulations! You just earned 10 points.")
 
 
 # 5-5. Alien Colors #3
