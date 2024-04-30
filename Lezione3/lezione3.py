@@ -1,3 +1,5 @@
+import random
+
 # 4-1. Pizzas
 print("Number 4-1:")
 pizzas: list[str] = ["margherita", "rossa", "diavola"]
@@ -193,7 +195,9 @@ print(6 not in numbers)
 # 5-3. Alien Colors #1
 print("\n")
 print("Number 5-3:")
-
+alien_color = 'green'
+if alien_color == 'green':
+    print("Congratulations! You just earned 5 points.")
 
 
 # 5-4. Alien Colors #2
