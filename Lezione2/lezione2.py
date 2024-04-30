@@ -230,7 +230,16 @@ print("City:", person["city"])
 # 6-2. Favorite Numbers:
 print("\n")
 print("Number 6-2.")
+favorite_numbers = {
+    "Angelo": 7,
+    "Gabriel": 12,
+    "Samuele": 5,
+    "Davide": 8,
+    "Mattia": 3
+}
 
+for person, number in favorite_numbers.items():
+    print(f"{person}'s favorite number is {number}.")
 
 
 # 6-3. Glossary:
