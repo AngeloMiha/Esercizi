@@ -1,29 +1,43 @@
 # Angelo Mihalache
 # 18/04/2024
-
-print("Hello world!")
 import random
 
-#Personal Message
+
+print("Hello world!")
+
+
+# 2-3. Personal Message
+print("\n")
+print("Number 2-3:")
 name = "Eric"
 print(f"Hello {name}, would you like to learn some Python today")
 
-#Name Cases
+
+# 2-4. Name Cases
+print("\n")
+print("Number 2-4:")
 upperCases = name.upper()
 lowerCases = name.lower()
 print(upperCases)
 print(lowerCases)
 
-#Famouse Quote 1 - 2
+
+# 2-5 / 2-6. Famous Quote
+print("\n")
+print("Number 2-5 / 2-6:")
 "Martin Luther King once said: I have a dream"
 message = "I have a dream"
 famousPerson = "Martin Luher King"
 print (message + " once said "  + famousPerson)
 
-#File Extension
+
+# 2-8. File Extensions
+print("\n")
+print("Number 2-8:")
 fileName = "python_notes.txt"
 fileNameCorrect = fileName.removesuffix(".txt")
 print(fileNameCorrect)
+
 
 # 3-1. Names
 print("\n")
@@ -37,11 +51,13 @@ friend5 = names[4]
 listFriends = [friend1, friend2, friend3, friend4, friend5] #questa lista è stata creata solo a scopo per un check
 print (listFriends)
 
+
 # 3-2. Greetings
 print("\n")
 print("Number 3-2.")
 for name in names:
     print ("Grazie mille per aver partecipato all'attività", name )
+
 
 # 3-3. Your own list
 print("\n")
@@ -50,12 +66,14 @@ vehicles = ["an S2000", "an s13", "an honda civic", "a mitsubishi evo", "a mitsu
 for vehicle in vehicles:
     print("Surely", vehicle + " is in my dream garage")
 
+
 # 3-4. Guest List
 print("\n")
 print("Number 3-4.")
 guests = ["Travis Scott", "Ye", "mamma", "Mattia Rò", "Cerratti", "Cuozzo"]
 for guest in guests:
     print("Hey", guest + ", want to join us or dinner?")
+
 
 # 3-5. Changing Guest List
 print("\n")
@@ -196,7 +214,17 @@ print(fruits)
 # 6-1. Person:
 print("\n")
 print("Number 6-1.")
+person = {
+    "first_name": "Angelo",
+    "last_name": "Mihalache",
+    "age": 19,
+    "city": "Rome"
+}
 
+print("First Name:", person["first_name"])
+print("Last Name:", person["last_name"])
+print("Age:", person["age"])
+print("City:", person["city"])
 
 
 # 6-2. Favorite Numbers:
