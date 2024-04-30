@@ -327,7 +327,17 @@ for pet in pets:
 # 6-9. Favorite Places:
 print("\n")
 print("Number 6-9.")
+favorite_places = {
+    "Angelo": ["Amsterdam", "Tokyo", "Bucharest", "New York"],
+    "Sani": ["Sophia", "New York", ],
+    "Gabriel": ["Paris", "Holliwood", "Madrid"]
+}
 
+for person, places in favorite_places.items():
+    print(f"{person}'s favorite places:")
+    for place in places:
+        print("- " + place)
+    print()
 
 
 # 6-10. Favorite Numbers:
