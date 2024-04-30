@@ -214,7 +214,14 @@ else:
 # 5-5. Alien Colors #3
 print("\n")
 print("Number 5-5:")
+alien_color = 'green'
 
+if alien_color == 'green':
+    print("Congratulations! You just earned 5 points for the green alien.")
+elif alien_color == 'yellow':
+    print("Congratulations! You just earned 10 points for the yellow alien.")
+else:
+    print("Congratulations! You just earned 15 points for the red alien.")
 
 
 # 5-6. Stages of Life
