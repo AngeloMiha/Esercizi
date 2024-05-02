@@ -57,3 +57,11 @@ def sum_above_threshold(numbers: list[int], threshold: int) -> int:
             continue
     return somma
 print(sum_above_threshold([15, 5, 25], 20))
+
+
+# Scrivi una funzione che, dato un insieme e una lista di numeri interi da rimuovere,
+# ritorni un nuovo insieme senza i numeri specificati nella lista.
+def remove_elements(original_set: set[int], elements_to_remove: list[int]) -> set[int]:
+    for num in elements_to_remove:
+        original_set.discard(num)
+    return original_set
