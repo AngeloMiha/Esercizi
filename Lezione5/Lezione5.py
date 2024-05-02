@@ -24,3 +24,19 @@ def is_magic_number(num: int) -> bool:
             continue
     return False
 
+
+# Scrivi una funzione che ritorna il valore massimo, minimo e la media di una lista di numeri interi.
+def list_statistics(numbers: list[int]):
+    massimo: int = max(numbers)
+    minimo: int = min(numbers)
+    somma: int = 0
+    med: int = 0
+    cont: int = 0
+    for num in numbers:
+        somma += num
+        cont += 1
+    med = somma / cont
+    return massimo, minimo, med
+print(list_statistics([1, 2, 3, 4, 5]))
+
+
