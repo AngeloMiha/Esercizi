@@ -65,3 +65,15 @@ def remove_elements(original_set: set[int], elements_to_remove: list[int]) -> se
     for num in elements_to_remove:
         original_set.discard(num)
     return original_set
+
+
+# Scrivi una funzione che rimuove tutti i duplicati da una lista,
+# contenente sia numeri che lettere, mantenendo l'ordine originale degli elementi.
+def remove_duplicates(lista1: list[int]) -> list:
+    lista2: list[int] = []
+    for num in lista1:
+        if num not in lista2:
+            lista2.append(num)
+    return lista2
+
+
