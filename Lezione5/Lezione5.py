@@ -106,3 +106,21 @@ def merge_dictionaries(dict1: dict, dict2: dict) -> dict:
     return dict3
 
 
+# Scrivi una funzione che conta e ritorna quante volte un elemento appare isolato in una lista di numeri interi.
+# Un elemento è considerato isolato se non è affiancato sia a destra che a sinistra da elementi uguali.
+def count_isolated(lista: list[int]) -> int:
+    isolati = 0
+    
+    if lista == []:
+        return isolati
+    else:
+
+        if lista[0] != lista[1]:
+            isolati += 1
+        if lista[-1] != lista[-2]:
+            isolati += 1
+
+        for i in range(1, len(lista) - 1):
+            if lista[i] != lista[i + 1] and lista[i] != lista[i - 1]:
+                isolati += 1
+        return isolati
