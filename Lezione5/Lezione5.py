@@ -37,6 +37,11 @@ def list_statistics(numbers: list[int]):
         cont += 1
     med = somma / cont
     return massimo, minimo, med
-print(list_statistics([1, 2, 3, 4, 5]))
 
 
+# Il codice dovrebbe stampare i numeri all'interno di una lista.
+# TROVA L'ERRORE E CORREGGI IL CODICE
+numbers: list[int] = [1, 2, 3, 4, 5]
+
+for i in numbers:
+    print("Number:", i)
