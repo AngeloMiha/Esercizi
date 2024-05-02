@@ -77,3 +77,18 @@ def remove_duplicates(lista1: list[int]) -> list:
     return lista2
 
 
+# Scrivi una funzione che verifica se in una stringa le parentesi '(' e ')' sono bilanciate,
+# cioè per ogni parentesi che apre c'è la corrispondente parentesi che chiude.
+def check_parentheses(expression: str) -> bool:
+    lista: list[int] = []
+    for i in expression:
+        if i == '(':
+            lista.append(i)
+        elif i == ')':
+            if not lista:
+                return False
+            lista.pop()
+    return not lista
+
+
+# 
