@@ -91,4 +91,18 @@ def check_parentheses(expression: str) -> bool:
     return not lista
 
 
-# 
+# Scrivi una funzione che unisce due dizionari. Se una chiave è presente in entrambi, somma i loro valori.
+def merge_dictionaries(dict1: dict, dict2: dict) -> dict:
+    dict3: dict = {}
+    for k,v in dict1.items():
+        if k in dict2:
+            dict1[k] += dict2[k]
+    
+    for k,v in dict1.items():
+        dict2[k] = v
+    s = sorted(dict2.items())
+    for k,v in s:
+        dict3[k] = v
+    return dict3
+
+
