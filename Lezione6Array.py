@@ -1,4 +1,3 @@
-'''
 def visit_tree(tree: dict[int, list[int]], node: int):
     print(node)
     left_child, right_child = tree.get(node, [None,None])
@@ -9,9 +8,9 @@ def visit_tree(tree: dict[int, list[int]], node: int):
 
 tree = {4: [3,5], 3: [2,None], 5:[4.5,6], 2:[None,None], 4.5:[None,None], 6:[None,None]}
 visit_tree(tree, 4)
-'''
 
-'''
+
+
 def visit_tree_iterative(tree: dict[int, list[int]], root: int):
     stack: list[int] = [root]
     while stack:
@@ -25,12 +24,9 @@ def visit_tree_iterative(tree: dict[int, list[int]], root: int):
 
 tree = {4: [3,5], 3: [2,None], 5:[4.5,6], 2:[None,None], 4.5:[None,None], 6:[None,None]}
 visit_tree_iterative(tree, 4)                                        
-'''
 
 
 
-
-'''
 def __binary_search_recursive(array: list[int], x:int, low:int, high:int) -> int:
     return __binary_search_recursive(array, x, )
 
@@ -45,4 +41,3 @@ def __binary_search_recursive(array: list[int], x:int, low:int, high:int) -> int
         return __binary_search_recursive(array, x, mid + 1, high)
     else:
         return __binary_search_recursive(array, x, low, mid - 1)
-'''
