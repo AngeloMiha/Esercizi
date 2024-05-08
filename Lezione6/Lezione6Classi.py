@@ -139,3 +139,45 @@ print(cat.get_legs(), "\n")
 print(dog.printInfo())
 print(cat.printInfo())
 '''
+
+'''
+class Food:
+    def __init__(self, name: str, price: float, description: str) -> None:
+        self.name = name
+        self.price = price
+        self.description = description
+    
+    def __str__(self) -> str:
+        return f"Name = {self.name}, price = {self.price}, description = {self.description}"    
+
+class Menu:
+    def __init__(self, foods: list[Food] = []):
+        self.foods = foods
+
+    def addFood(self, food: Food):
+        self.foods.append(food)
+
+    def removeFood(self, food: Food):
+        self.foods.remove(food)
+    
+    def __str__(self) -> str:
+        s = ""
+        for food in self.foods:
+            s += food.__str__() + "\n"
+        return s[:-1]
+    
+    def avg_price(self):
+        prices = 0
+        for food in self.foods:
+            prices += food.price
+        return prices / len(self.foods)
+    
+
+
+pizza: Food = Food(name = "Pizza", price = 7.00, description = "Is the most famous fod in Italy")
+poke: Food = Food(name = "Pokè", price = 10.00, description = "Is made of sushi")
+sarmale: Food = Food(name = "Sarmale", price = 5.00, description = "Is a traditional food in Romania")
+
+menu = Menu([pizza, poke, sarmale])
+print(menu)
+'''
