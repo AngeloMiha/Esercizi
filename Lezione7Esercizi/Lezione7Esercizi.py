@@ -10,5 +10,11 @@ def list_statistics(numbers: list[int]) -> int:
         somma += num
     media = somma / len(numbers)
     return massimo, minimo, media
-print(list_statistics([1, 2, 3, 4, 5]))
 
+# Scrivi una funzione che riceve un numero e stampa un conto alla rovescia da quel numero a zero.
+def countdown(n: int) -> int:
+    print(n)
+    while n != 0:
+        for i in range(n):
+            n -= 1
+            print(n)
