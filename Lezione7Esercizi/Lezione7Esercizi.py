@@ -11,6 +11,7 @@ def list_statistics(numbers: list[int]) -> int:
     media = somma / len(numbers)
     return massimo, minimo, media
 
+
 # Scrivi una funzione che riceve un numero e stampa un conto alla rovescia da quel numero a zero.
 def countdown(n: int) -> int:
     print(n)
@@ -19,15 +20,13 @@ def countdown(n: int) -> int:
             n -= 1
             print(n)
 
-# Scrivi una funzione che prenda in input una lista di dizionari che rappresentano voti di studenti e aggrega i voti per studente in un nuovo dizionario.
 
-def aggrega_voti(voti: dict) -> dict[str:list[int]]:
+# Scrivi una funzione che accetti un dizionario di prodotti con i prezzi.
+# Restituisci un nuovo dizionario con solo i prodotti che hanno un prezzo superiore a 20, scontati del 10%.
+def filtra_e_mappa(prodotti: dict[str:float]) -> list[str:float]:
     dizzionario: dict = {}
-    
-    for studente in voti:
-        nome_studente = studente['nome']
-        voto_studente = studente['voto']
-        if nome_studente not in dizzionario:
-            dizzionario[nome_studente] = []
-        dizzionario[nome_studente].append(voto_studente)
+    for prodotto, prezzo in prodotti.items():
+        if prezzo > 20:
+            sconto = prezzo * 0.9
+            dizzionario[prodotto] = sconto
     return dizzionario
