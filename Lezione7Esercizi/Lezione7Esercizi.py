@@ -18,3 +18,16 @@ def countdown(n: int) -> int:
         for i in range(n):
             n -= 1
             print(n)
+
+# Scrivi una funzione che prenda in input una lista di dizionari che rappresentano voti di studenti e aggrega i voti per studente in un nuovo dizionario.
+
+def aggrega_voti(voti: dict) -> dict[str:list[int]]:
+    dizzionario: dict = {}
+    
+    for studente in voti:
+        nome_studente = studente['nome']
+        voto_studente = studente['voto']
+        if nome_studente not in dizzionario:
+            dizzionario[nome_studente] = []
+        dizzionario[nome_studente].append(voto_studente)
+    return dizzionario
