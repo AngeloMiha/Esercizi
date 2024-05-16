@@ -2,11 +2,12 @@ cont = 0
 i = 0
 j = 1
 l = [3, 4, 2, 5, 1]
+sus = len(l)
 print(l)
 
 while cont < len(l)**2:
 
-    if j == 5:
+    if j == sus:
         i = 0
         j = 1
     else:
