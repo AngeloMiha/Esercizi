@@ -6,7 +6,7 @@ print(l)
 
 while cont < len(l)**2:
 
-    if j == range(l[-1]):
+    if j == 5:
         i = 0
         j = 1
     else:
