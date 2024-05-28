@@ -1,13 +1,14 @@
 import random
 
 def stampa_percorso(pos_tartaruga, pos_lepre):
-    percorso = ['_'] * 70
+    percorso = ['-'] * 70
     if pos_tartaruga == pos_lepre:
         percorso[pos_tartaruga - 1] = 'OUCH!!!'
     else:
         percorso[pos_tartaruga - 1] = 'T'
         percorso[pos_lepre - 1] = 'H'
     print(''.join(percorso))
+    print("\n")
 
 
 def mosse_tarta(pos):
@@ -59,5 +60,16 @@ def gara():
         pos_h = mosse_lepre(pos_h)
         pos_t = mosse_tarta(pos_t)
         stampa_percorso(pos_t, pos_h)
+
+        if pos_t == 70:
+            print("Tarta SUS")
+            break
+        elif pos_h == 70:
+            print("Lepre SAS")
+            break
+        elif pos_h == 70 and pos_t == 70:
+            print("IT'S A TIE")
+            break
+
 
 gara()
