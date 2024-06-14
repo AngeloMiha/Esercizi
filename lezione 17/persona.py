@@ -37,14 +37,13 @@ class Persona:
             print("L'età deve essere un numero intero!")
     
     def getName(self):
-        return f"Nome: {self.__first_name}."
+        return self.__first_name
     
     def getLastname(self):
-        return f"Cognome: {self.__last_name}."
+        return self.__last_name
     
     def getAge(self):
-        return f"Nome: {self.__age}."
+        return self.__age
     
     def greet(self):
         print(f"Ciao, sono {self.__first_name} {self.__last_name}! Ho {self.__age} anni!")
-    

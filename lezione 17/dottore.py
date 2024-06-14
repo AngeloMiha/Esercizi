@@ -1,6 +1,6 @@
-import persona
+from persona import Persona
 
-class Dottore(persona):
+class Dottore(Persona):
 
     def __init__(self, first_name, last_name, spec: str, parc: float):
         super().__init__(first_name, last_name)
@@ -17,22 +17,22 @@ class Dottore(persona):
             self.__parc = None
             print("La parcella inserita non è un float!")
 
-    def setspec(self, spec):
+    def setSpec(self, spec):
         if isinstance(spec, str):
             self.__spec = spec
         else:
             print("La specializzazione inserita non è una stringa!")
     
-    def setparc(self, parc):
+    def setParc(self, parc):
         if isinstance(parc, float):
             self.__parc = parc
         else:
             print("La parcella inserita non è un float!")
     
-    def getspec(self):
+    def getSpec(self):
         return self.__spec
     
-    def getparc(self):
+    def getParc(self):
         return self.__parc
     
     def isAValidDoctor(self):
@@ -48,8 +48,3 @@ class Dottore(persona):
             print(f"Sono un medico {self.__spec}")
         else:
             print("Specializzazione non disponibile.")
-
-dottore = Dottore("Luigi", "Bianchi", "Pediatra", 150.0)
-dottore.setAge(40)
-dottore.doctorGreet()  
-dottore.isAValidDoctor()
