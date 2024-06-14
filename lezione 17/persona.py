@@ -48,6 +48,3 @@ class Persona:
     def greet(self):
         print(f"Ciao, sono {self.__first_name} {self.__last_name}! Ho {self.__age} anni!")
     
-persona = Persona("Mario", "Rossi")
-persona.setAge(30)
-persona.greet()
