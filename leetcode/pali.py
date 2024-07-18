@@ -7,12 +7,9 @@ class Solution(object):
         lista_rev = [int(cifra) for cifra in str(x)]
         lista_rev.reverse()
 
-        for num in lista:
-            if lista[num] == lista_rev[num]:
-                continue
-            else:
-                return False
-        return True
+        if lista == lista_rev:
+            return True
+        return False
     
 
 print(Solution.isPalindrome(100))
