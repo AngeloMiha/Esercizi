@@ -112,4 +112,7 @@ def test_calculator():
     calc.num = -123.45
     print("Cancella:", calc.canc())
 
+    def inutile(self):
+        pass
+    
 test_calculator()
