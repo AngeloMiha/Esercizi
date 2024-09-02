@@ -30,10 +30,10 @@ def send_email(sender_email,
     except Exception as e:
         print(f"Failed to send email. Error: {e}")
         # Example usage
-        sender_email = "your-email@gmail.com"
-        receiver_email = "recipient-email@example.com"
-        subject = "Test Email"
-        body = "This is a test email sent from Python."
-        password = "your-app-specific-password"
+        sender_email = "mihalacheangelo099@gmail.com"
+        receiver_email = "francorcr@hotmail.com"
+        subject = "Test Email del Sugoma"
+        body = "sus... Sus... SUs... SUS !!!"
+        password = "maTTIA2018"
         send_email(sender_email, receiver_email,
         subject, body, password)
